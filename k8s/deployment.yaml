@@ -19,5 +19,5 @@ spec:
             - containerPort: 4000
           env:
             - name: PORT
-              value: 4000
+              value: "4000"
           imagePullPolicy: Always
