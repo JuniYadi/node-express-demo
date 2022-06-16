@@ -1,0 +1,19 @@
+{
+  "name": "node-express-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JuniYadi/node-express-demo.git",
+  "author": "JuniYadi <juniyadi94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "helmet": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
