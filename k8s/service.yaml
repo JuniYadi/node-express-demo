@@ -8,5 +8,7 @@ spec:
   selector:
     app: express-demo
   ports:
-  - port: 80
+  - name: http
+    protocol: TCP
+    port: 4000
     targetPort: 4000
