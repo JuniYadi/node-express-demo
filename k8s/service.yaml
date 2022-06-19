@@ -2,9 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: express-demo
+  labels:
+    app: express-demo
 spec:
   selector:
     app: express-demo
   ports:
-    - port: 80
-      targetPort: 4000
+  - port: 80
+    targetPort: 4000
