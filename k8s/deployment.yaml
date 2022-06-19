@@ -5,7 +5,7 @@ metadata:
   labels:
     app: express-demo
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: express-demo
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: express-demo
-        image: nginx
+        image: juniyadi/express-demo:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 4000
@@ -29,5 +29,5 @@ spec:
             cpu: 500m
             memory: 250Mi
         env:
-        - name: PORT
-          value: "4000"
+        - name: APP_NAME
+          value: "express"
