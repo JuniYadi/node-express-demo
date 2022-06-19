@@ -19,7 +19,7 @@ spec:
         image: juniyadi/express-demo:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 4000
+        - containerPort: 3000
           protocol: TCP
         resources:
           limits:

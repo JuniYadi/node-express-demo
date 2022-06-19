@@ -16,4 +16,4 @@ spec:
           service:
             name: express-demo
             port:
-              number: 4000
+              number: 3000
