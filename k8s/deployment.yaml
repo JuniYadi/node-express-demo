@@ -24,10 +24,3 @@ spec:
         env:
         - name: PORT
           value: "4000"
-      - resources:
-          limits:
-            cpu: 1000m
-            memory: 500Mi
-          requests:
-            cpu: 500m
-            memory: 250Mi
