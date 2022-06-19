@@ -15,13 +15,6 @@ spec:
         app: express-demo
     spec:
       containers:
-      - resources:
-          limits:
-            cpu: 100m
-            memory: 100Mi
-          requests:
-            cpu: 100m
-            memory: 100Mi
       - name: express-demo
         image: nginx
         imagePullPolicy: Always
@@ -31,3 +24,10 @@ spec:
         env:
         - name: PORT
           value: "4000"
+      - resources:
+          limits:
+            cpu: 1000m
+            memory: 500Mi
+          requests:
+            cpu: 500m
+            memory: 250Mi
