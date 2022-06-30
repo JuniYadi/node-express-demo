@@ -1,3 +1,7 @@
 # node-express-demo
 
-## Running
+## Install
+
+```
+npm i
+```
