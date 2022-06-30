@@ -11,5 +11,3 @@ npm i
 ```
 node index.js
 ```
-
-## Jenkins CI/CD Test
