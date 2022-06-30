@@ -13,10 +13,14 @@ pipeline {
                 sh 'node -v'
             }
         }
-        
         stage('Build') {
             steps {
                 sh 'npm install'
+            }
+        }
+        stage('Artifact') {
+            steps {
+                sh 'ls -lha'
             }
         }
     }
