@@ -12,6 +12,14 @@ services:
       - pg_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+  redis:
+    image: redis:alpine
+    restart: "no"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - ./data:/data
+    ports:
+      - "6379:6379"
 
 volumes:
   pg_data:
