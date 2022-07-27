@@ -13,6 +13,11 @@ app.get('/env', (req, res) => {
     res.send({ env: process.env });
 });
 
+app.post('/webhook', (req, res) => {
+    console.log(req.body);
+    res.sendStatus(200);
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port http://127.0.0.1:${PORT}`);
 });
