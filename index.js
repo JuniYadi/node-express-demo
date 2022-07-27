@@ -13,6 +13,12 @@ app.get('/env', (req, res) => {
     res.send({ env: process.env });
 });
 
+
+app.get('/webhook', (req, res) => {
+    console.log('query', req.query);
+    res.status(200).json({ code: 200, message: 'success' });
+});
+
 app.post('/webhook', (req, res) => {
     console.log('query', req.query);
     console.log('body', req.body);
