@@ -14,8 +14,9 @@ app.get('/env', (req, res) => {
 });
 
 app.post('/webhook', (req, res) => {
+    console.log(req.query);
     console.log(req.body);
-    res.sendStatus(200);
+    res.status(200).json({ code: 200, message: 'success' });
 });
 
 app.listen(PORT, () => {
