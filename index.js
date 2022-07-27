@@ -14,8 +14,8 @@ app.get('/env', (req, res) => {
 });
 
 app.post('/webhook', (req, res) => {
-    console.log(req.query);
-    console.log(req.body);
+    console.log('query', req.query);
+    console.log('body', req.body);
     res.status(200).json({ code: 200, message: 'success' });
 });
 
